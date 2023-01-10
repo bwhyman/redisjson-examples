@@ -1,0 +1,13 @@
+spring:
+  data:
+    redis:
+      host: 172.31.116.255
+      password: 1213
+      port: 3390
+logging:
+  level:
+    root: info
+    com:
+      example: debug
+  pattern:
+    console: '%-5level %C.%M[%line] - %msg%n'

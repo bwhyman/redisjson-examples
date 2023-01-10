@@ -1,0 +1,12 @@
+version: '3.7'
+services:
+  redisjson:
+    image: redis/redis-stack-server:7.0.2-RC3
+    volumes:
+      - ./data/:/data/
+      # - ./redis.conf:/redis-stack.conf
+    environment:
+      TZ: Asia/Shanghai
+      REDIS_ARGS: --requirepass 1213
+    ports:
+      - '3390:6379'
